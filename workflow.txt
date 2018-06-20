@@ -1,0 +1,19 @@
+26yrslot_limit_age_bag_cm7.1.r
+  executable script for slots that calls all other scritps
+  sets parameters of interest, current parameters are:
+  pr.min <-  0.40 ##min percent reduction
+  pr.max <-  0.465 ##max percent reduction
+  years <- c(2012:2015) ##this is called in mrip length read script,
+  yr.min <- 2012 ##sets min year for other length data
+  yr.max <- 2015 ##sets max year for other length data
+Calls:
+### Data to read
+source("file:///C:/Users/jacob/OneDrive - University of Connecticut/UCONN/Projects/Tautog_ASMFC/database/ALS.r")
+source("file:///C:/Users/jacob/OneDrive - University of Connecticut/UCONN/Projects/Tautog_ASMFC/Slot-MEffects/26yrplus_slot/New_MRIP_Bag_26yr.r")
+source("file:///C:/Users/jacob/OneDrive - University of Connecticut/UCONN/Projects/Tautog_ASMFC/Slot-MEffects/26yrplus_slot/BFG.r")
+###Functions List
+source("file:///C:/Users/jacob/OneDrive - University of Connecticut/UCONN/Projects/Tautog_ASMFC/database/functions.r")
+###CSVs to read
+t9 <- read.csv("file:///C:/Users/jacob/OneDrive - University of Connecticut/UCONN/Projects/Tautog_ASMFC/database/tog_9lengths_LIS_2004-15.csv")
+####
+26 year age group stock assessment
